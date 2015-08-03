@@ -174,7 +174,7 @@ extension CVCalendarView {
             if !validated {
                 let width = selfSize.width
                 let height: CGFloat
-                let countOfWeeks = CGFloat(5)
+                let countOfWeeks = CGFloat(6)
                 
                 let vSpace = appearance.spaceBetweenWeekViews!
                 let hSpace = appearance.spaceBetweenDayViews!
@@ -189,7 +189,7 @@ extension CVCalendarView {
                     
                     weekViewSize = CGSizeMake(width, height)
                     dayViewSize = CGSizeMake((width / 7.0) - hSpace, height)
-                    validated = true
+                    //validated = true
                     
                     contentController.updateFrames(selfSize != contentViewSize ? bounds : CGRectZero)
                 }
